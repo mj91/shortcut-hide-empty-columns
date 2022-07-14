@@ -1,0 +1,11 @@
+{
+  "name": "Shortcut Hide Empty Columns",
+  "version": "1.0",
+  "description": "Makes Shortcut usable again on small screen",
+  "manifest_version": 3,
+  "host_permissions": ["*://*.shortcut.com/"],
+  "content_scripts": [ {
+    "css": [ "better.css" ],
+    "matches": [ "https://app.shortcut.com/*" ]
+ } ]
+}

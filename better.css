@@ -1,0 +1,22 @@
+.empty-column:not(.has-sortable-story) {
+    opacity: 0.5;
+    width: 20px !important;
+}
+
+.jumbo .empty-column:not(.has-sortable-story) .column-title {
+    transform-origin: 15px 15px;
+}
+
+.empty-column:not(.has-sortable-story) .column-title {
+    transform-origin: 12px 12px;
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+    width: 200px;
+}
+
+.empty-column:not(.has-sortable-story) .column-dropdown,
+.empty-column:not(.has-sortable-story) .column-checkbox,
+.empty-column:not(.has-sortable-story) .column-story-count,
+.empty-column:not(.has-sortable-story) .empty-state-container {
+    display: none !important;
+}
