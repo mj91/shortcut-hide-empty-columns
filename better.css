@@ -20,3 +20,11 @@
 .empty-column:not(.has-sortable-story) .empty-state-container {
     display: none !important;
 }
+
+.react-stories-table-content .react-stories-table-wrapper #columns {
+    min-width: max-content !important;
+} 
+
+.react-stories-table-wrapper {
+    width: max-content;
+}
