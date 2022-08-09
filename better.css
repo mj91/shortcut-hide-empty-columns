@@ -33,9 +33,6 @@
   display: none !important;
 }
 
-margin-left: -15px;
-margin-top: -26px;
-
 .react-stories-table-content .react-stories-table-wrapper #columns {
   min-width: max-content !important;
 }
