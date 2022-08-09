@@ -1,30 +1,45 @@
 .empty-column:not(.has-sortable-story) {
-    opacity: 0.5;
-    width: 20px !important;
+  opacity: 0.75;
+  width: 20px !important;
+  margin: 0 5px;
 }
 
-.jumbo .empty-column:not(.has-sortable-story) .column-title {
-    transform-origin: 15px 15px;
+.jumbo .empty-column:not(.has-sortable-story) .column-title,
+.jumbo .empty-column:not(.has-sortable-story) [id^="column-title-"] {
+  transform-origin: 15px 15px;
 }
 
-.empty-column:not(.has-sortable-story) .column-title {
-    transform-origin: 12px 12px;
-    transform: rotate(90deg);
-    transition: transform 0.2s;
-    width: 200px;
+.empty-column:not(.has-sortable-story) .column-title,
+.empty-column:not(.has-sortable-story) [id^="column-title-"] {
+  transform-origin: 6px 0px;
+  transform: rotate(90deg);
+  transition: transform 0.2s;
+  width: 200px;
+  overflow: visible;
+  margin-top: 26px;
+}
+
+.empty-column:not(.has-sortable-story) [role="combobox"] {
+  margin-left: -20px;
+  margin-top: -23px;
 }
 
 .empty-column:not(.has-sortable-story) .column-dropdown,
 .empty-column:not(.has-sortable-story) .column-checkbox,
 .empty-column:not(.has-sortable-story) .column-story-count,
-.empty-column:not(.has-sortable-story) .empty-state-container {
-    display: none !important;
+.empty-column:not(.has-sortable-story) .empty-state-container,
+.empty-column:not(.has-sortable-story) [id^="column-count-"],
+.empty-column:not(.has-sortable-story) [data-testid="checkbox-clickable"] {
+  display: none !important;
 }
 
+margin-left: -15px;
+margin-top: -26px;
+
 .react-stories-table-content .react-stories-table-wrapper #columns {
-    min-width: max-content !important;
-} 
+  min-width: max-content !important;
+}
 
 .react-stories-table-wrapper {
-    width: max-content;
+  width: max-content;
 }
